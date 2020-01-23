@@ -8,6 +8,8 @@
     const express = require('express');
     const app = express();
     const hbs = require('hbs');
+
+    const port = process.env.PORT || 3000 
 //Define paths for Express config
     const publicfiles = path.join(__dirname,`../public`);
     const viewpath = path.join(__dirname,`../templates/views`);
@@ -81,6 +83,6 @@
         }
      );
     });
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('your port is running on port 3000');
 });

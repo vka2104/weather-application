@@ -1,5 +1,5 @@
 async function fetchweather(location) {
-    const result = await fetch(`http://localhost:3000/weather?search=${location}`);
+    const result = await fetch(`/weather?search=${location}`);
     const data = await result.json();
     return data;
 }
