@@ -1,0 +1,125 @@
+<!doctype html>
+    <html lang="en">
+        <head>
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+            <link rel = "stylesheet" href="/css/style.css">
+            <link rel="icon"  href="/images/navimg1.png" >
+            {{!-- the below will from app.js call back values it having value object 
+            values or some function return value that's it  --}}
+            <title>{{title}}</title>
+        </head>
+        <body>
+           {{!-- the below  {{>navbar}} --> is a file(navbar.hbs) form partials folders using
+            of these partials files ,we can move the content or code or anything is 
+            common to two or more pages means we will move it to partials and use it in view files
+            as like below  --}}
+            
+            {{>navbar}}
+
+            <!-- Header -->
+            <header class="bg-primary text-center py-5 mb-4">
+                <div class="container">
+                    <h1 class="font-weight-light text-white">{{title}} page</h1>
+                </div>
+            </header>
+        
+            <!-- Page Content -->
+            <div class="container">
+                <div class="row">
+                <!-- Team Member 1 -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                    <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Team Member</h5>
+                        <div class="card-text text-black-50">Web Developer</div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                    <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Team Member</h5>
+                        <div class="card-text text-black-50">Web Developer</div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                    <img src="https://source.unsplash.com/sNut2MqSmds/500x350" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Team Member</h5>
+                        <div class="card-text text-black-50">Web Developer</div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                    <img src="https://source.unsplash.com/ZI6p3i9SbVU/500x350" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Team Member</h5>
+                        <div class="card-text text-black-50">Web Developer</div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="row">
+                    <!-- Team Member 1 -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Team Member</h5>
+                        <div class="card-text text-black-50">Web Developer</div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Team Member</h5>
+                        <div class="card-text text-black-50">Web Developer</div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="https://source.unsplash.com/sNut2MqSmds/500x350" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Team Member</h5>
+                        <div class="card-text text-black-50">Web Developer</div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Team Member 4 -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="https://source.unsplash.com/ZI6p3i9SbVU/500x350" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Team Member</h5>
+                        <div class="card-text text-black-50">Web Developer</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            {{>footer}}
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        </body>
+    </html>
