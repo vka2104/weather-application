@@ -19,7 +19,7 @@ weatherForm.addEventListener('submit', (e) => {
             error.textContent = weather.error;
             success.textContent ='';
         } else {
-            success.textContent =JSON.stringify(weather);
+            success.textContent =JSON.stringify(`Location: ${weather.Location}, Weather: ${weather.Data}`);
             
         }
     });

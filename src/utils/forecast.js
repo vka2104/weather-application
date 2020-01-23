@@ -8,7 +8,7 @@ const forecast = (lat,long,callback) => {
         } else if(body.error) {
             callback(body.error,undefined);
         } else {
-            callback(undefined,`${body.daily.data[0].summary} It is currently ${body.currently.temperature} 'C out. There is a ${body.currently.precipProbability}% chance of rain.`);
+            callback(undefined,`${body.daily.data[0].summary} It is currently ${body.currently.temperature} 'C out.This high today is ${body.daily.data[0].temperatureHigh} 'C with the low if ${body.daily.data[0].temperatureLow} 'C. There is a ${body.currently.precipProbability}% chance of rain.`);
         }
     });
 }
